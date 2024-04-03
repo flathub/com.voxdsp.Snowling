@@ -23,4 +23,4 @@ modules:
     sources:
       - type: git
         url: https://notabug.org/Vandarin/Snowling.git
-        commit: 7f5affa214ea0ce2bdedc13f159de71d5f23c2a2
+        commit: 384ecbd3d321f1147e6bc316dad24144b2880a81

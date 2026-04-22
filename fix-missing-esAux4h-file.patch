@@ -1,0 +1,26 @@
+From 5e6833fefcdb7fb90f779d332b2656c07a73b958 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Wed, 22 Apr 2026 14:39:14 +0300
+Subject: [PATCH] Fix missing esAux4.h file
+
+Signed-off-by: Sabri Ünal <yakushabb@gmail.com>
+---
+ Snowling/main.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Snowling/main.c b/Snowling/main.c
+index 1228b80..731b7c1 100644
+--- a/Snowling/main.c
++++ b/Snowling/main.c
+@@ -12,7 +12,7 @@
+ #include <SDL2/SDL.h>
+ #include <SDL2/SDL_opengles2.h>
+ 
+-#include "esAux4.h"
++#include "inc/esAux4.h"
+ 
+ #include "assets/res.h"
+ #include "assets/scene.h"
+--
+libgit2 1.7.2
+

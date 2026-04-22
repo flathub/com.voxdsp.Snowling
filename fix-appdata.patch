@@ -1,0 +1,54 @@
+From fbba2fe9d45794dcd040ebe6e55fdaab23d437d8 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Wed, 22 Apr 2026 14:50:40 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+Signed-off-by: Sabri Ünal <yakushabb@gmail.com>
+---
+ Snowling/flatpak/snowling.appdata.xml | 23 ++++++++++++++++-------
+ 1 file changed, 16 insertions(+), 7 deletions(-)
+
+diff --git a/Snowling/flatpak/snowling.appdata.xml b/Snowling/flatpak/snowling.appdata.xml
+index ffa1742..fdb286b 100644
+--- a/Snowling/flatpak/snowling.appdata.xml
++++ b/Snowling/flatpak/snowling.appdata.xml
+@@ -1,20 +1,29 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<application>
+-	<id type="desktop">snowling.desktop</id>
++<component type="desktop-application">
++	<id>snowling.desktop</id>
+ 	<metadata_license>CC-BY-4.0</metadata_license>
+ 	<project_license>GPL-2.0-only</project_license>
+ 	<name>Snowling</name>
+ 	<summary>A bowling game of luck</summary>
+ 	<description>
+ 		<p>It's like a fruit machine, random chance, you left click and it bowls a random bowl - a game of chance/luck.</p>
+ 		<p>A web version is available at mrbid.github.io/snowling/</p>
+ 	</description>
+ 	<screenshots>
+-		<screenshot>https://camo.githubusercontent.com/e271188cb0f3d2c6a3114e43d530385b431a3bc3fdec43f9aa5f41a7e6427d55/68747470733a2f2f64617368626f6172642e736e617063726166742e696f2f736974655f6d656469612f6170706d656469612f323032312f31322f53637265656e73686f745f323032312d31322d31355f32302d33362d31312e706e67</screenshot>
++    <screenshot type="default">
++      <image>https://imgproxy.flathub.org/insecure/dpr:2/f:avif/rs:fill-down/aHR0cHM6Ly9kbC5mbGF0aHViLm9yZy9tZWRpYS9tb2JpL3Nub3diYWxsL1Nub3diYWxsL2I3OWExNDU0NmEyMjI1N2NjYThiZTI1NTlkYmQwYzQ2L3NjcmVlbnNob3RzL2ltYWdlLTFfb3JpZy5wbmc
++        </image>
++    </screenshot>
+ 	</screenshots>
+-	<url type="homepage">https://notabug.org/Vandarin/Snowball</url>
+-	<releases>
++  <url type="homepage">https://github.com/mrbid/NotABug-Mirror/</url>
++  <url type="bugtracker">https://github.com/mrbid/NotABug-Mirror/issues</url>
++  <url type="vcs-browser">https://github.com/mrbid/NotABug-Mirror/tree/main/Snowling</url>
++  <developer id="com.voxdsp">
++    <name>James William Fletcher</name>
++  </developer>
++<releases>
+ 		<release version="3.0" date="2023-11-15" />
+ 	</releases>
+-	<content_rating type="oars-1.0" />
+-</application>
++	<content_rating type="oars-1.1" />
++  <launchable type="desktop-id">snowling.desktop</launchable>
++</component>
+--
+libgit2 1.7.2
+
